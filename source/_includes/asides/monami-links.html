@@ -1,10 +1,16 @@
+{% if site.our_sites %}
 <section class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">弊社Webサイト</h3>
   </div>
   <div id="monami_links" class="list-group">
-    <a class="list-group-item" href="http://www.monami-ya.jp/">合同会社もなみ屋(公式)</a>
-    <a class="list-group-item" href="http://builder.monami-ya.com:8080/">公開ビルドサーバ</a>
+{% for pair in site.our_sites %}
+  {% if site.url contains pair[0] %}
+    <span class="list-group-item">{{pair[1]}}</a>
+  {% else %}
+    <a class="list-group-item" href="{{pair[0]}}">{{pair[1]}}</a>
+  {% endif %}
+{% endfor %}
   </div>
 </section>
 <section class="panel panel-default">
@@ -26,3 +32,4 @@
   <div>
   </div>
 </section>
+{% endif %}
