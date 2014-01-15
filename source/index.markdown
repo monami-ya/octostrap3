@@ -7,5 +7,5 @@ footer: false
 
 We provide these services for our customers.
 
-* [Mail/Web based help desk service](/orts/) (Beta version : Free registration)
-* [FAQ database](/orts/faq.pl) (Beta version)
+* [Mail/Web based help desk service](/otrs/) (Beta version : Free registration)
+* [FAQ database](/otrs/faq.pl) (Beta version)
